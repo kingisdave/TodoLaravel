@@ -1,4 +1,4 @@
-@extends('navbar')
+<!-- @extends('navbar')
   @section('viewingpages')
 	<div class="container-fluid">
 		<div class="card">
@@ -18,4 +18,4 @@
 			</div>
 		</div>
 	</div>
-  @endsection
+  @endsection -->

@@ -37,13 +37,17 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function setPasswordAttribute($val)
-    {
-        $this->attributes["password"] = bcrypt($val);
-    }
+    // public function setPasswordAttribute($val)
+    // {
+    //     $this->attributes["password"] = bcrypt($val);
+    // }
 
-    public function getNameAttribute($value)
+    // public function getNameAttribute($value)
+    // {
+    //     return $this->attributes["name"] = strtoupper($value);
+    // }
+    public function todo()
     {
-        return $this->attributes["name"] = strtoupper($value);
+        return $this->hasMany(todo::class);
     }
 }
